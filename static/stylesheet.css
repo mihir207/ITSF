@@ -14,3 +14,47 @@ html{
     height: 100px;
     border-radius: 100px;
 }
+
+.navlinks {
+    overflow: auto;
+  }
+  
+  .navlinks a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navlinks .icon {
+    display: none;
+  }
+  
+@media screen and (max-width: 600px) {
+    .navlinks .nav-item {display: none;}
+    .bs-component a.icon {
+      float: none;
+      display: block;
+      color: white;
+      width: 1.5em;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .navlinks-responsive {position: relative;}
+    .bs-component a.icon-responsive {
+        width: auto;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      display: block;
+    }
+    .navlinks-responsive a {
+      float: left;
+      width: 80%;
+      display: block;
+      text-align: left;
+    }
+  }
